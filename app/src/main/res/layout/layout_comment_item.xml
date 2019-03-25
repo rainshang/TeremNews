@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="@dimen/item_padding" android:orientation="vertical">
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+            android:id="@+id/commentAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            tools:text="Some Author:"
+            android:textStyle="bold"
+            app:use_gradient="true"
+    />
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+            android:id="@+id/commentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_padding"
+            tools:text="Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet"
+            app:use_gradient="true"
+    />
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+            android:id="@+id/commentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_padding"
+            android:layout_gravity="end"
+            tools:text="Some Date"
+            app:use_gradient="true"
+    />
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+          android:background="@color/darker_color"/>
+
+</LinearLayout>
+

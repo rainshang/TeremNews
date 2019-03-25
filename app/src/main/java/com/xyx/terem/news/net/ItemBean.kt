@@ -1,5 +1,9 @@
 package com.xyx.terem.news.net
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class ItemBean(
     val by: String,
     val dead: Boolean?,
@@ -16,4 +20,4 @@ data class ItemBean(
     val title: String?,
     val type: String,
     val url: String?
-)
+) : Parcelable
