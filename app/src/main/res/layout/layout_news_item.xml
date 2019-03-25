@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="@dimen/item_padding"
+        android:layout_margin="@dimen/item_padding"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/item_padding"
+            android:layout_height="match_parent">
+
+        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Some Story Title"
+                android:textSize="@dimen/list_item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:width_weight="0.6"
+                app:use_gradient="true"
+        />
+
+        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/itemAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                tools:text="Some Author"
+                android:textSize="@dimen/list_item_author_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemTitle"
+                android:layout_marginTop="@dimen/item_padding"
+                app:use_gradient="true"
+        />
+
+        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/itemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                tools:text="Some Date"
+                android:textSize="@dimen/list_item_author_date"
+                app:layout_constraintStart_toEndOf="@+id/itemAuthor"
+                app:layout_constraintTop_toTopOf="@id/itemAuthor"
+                app:layout_constraintBottom_toBottomOf="@id/itemAuthor"
+                android:layout_marginLeft="@dimen/item_padding"
+                android:layout_marginStart="@dimen/item_padding"
+                app:use_gradient="true"
+        />
+
+        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/itemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet Bacon ipsum dolor amet tail burgedoggen shankle sausage, boudin doner shank tenderlooin filet"
+                android:maxLines="2"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemAuthor"
+                android:layout_marginTop="@dimen/item_padding"
+                app:use_gradient="true"
+        />
+
+        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/itemUrl"
+                android:layout_width="match_parent"
+                android:autoLink="web"
+                android:layout_height="wrap_content"
+                tools:text="https://www.google.com"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemText"
+                android:layout_marginTop="@dimen/item_padding"
+                app:width_weight="0.8"
+                app:use_gradient="true"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
+
